@@ -116,13 +116,112 @@ footer #div1, footer #div2 {
     padding-top: 10px;
 }
 
-footer #div2 {
+footer #div2{
     display: flex;
     justify-content: space-between;
+}
+
+footer #div2 #div2a, footer #div2 #div2b {
+    height: 100%;
+    width: 35%;
+}
+
+footer #div2 #div2b {
+    width: 15%;
 }
 
 footer a {
     text-decoration: none;
     color: black;
     margin-left: 20px;
-} 
+}
+
+
+
+/* Tablet view */
+@media(max-width: 768px) {
+
+    #container {
+        width: 100%;
+    }
+
+    #icon {
+        width: 30%;
+        height: 30px;
+
+    }
+    
+    input {
+        border: none;
+        width: 75%;
+        height: 25px;
+    }
+
+    i {
+        margin: 10px 18px 0 8px;
+        color: gray;
+    }
+
+    #button {
+        width: 50%;
+        height: 100px;
+    }
+
+    #button button {
+        width: 35%;
+        height: 45px;
+    }
+}
+
+
+
+
+
+/* Mobile view */
+@media(max-width: 500px) {
+    #container {
+        width: 100%;
+    }
+
+    #google p {
+        display: flex;
+        justify-content: center;
+    }
+
+    #icon {
+        width: 60%;
+        height: 30px;
+    }
+
+    #button {
+        width: 82%;
+        height: 70px;
+    }
+
+    #button button {
+        width: 33%;
+        height: 55px;
+    }
+
+    #button a {
+        font-size: 14px;
+    }
+
+    footer #div2{
+        flex-direction: column;
+        justify-content: space-between;  
+    }
+
+    footer #div2 #div2a, footer #div2 #div2b {
+        height: 50%;
+        width: 100%;
+    }
+    footer {
+        height: 120px;
+    }
+
+    footer a {
+        margin-left: 10px;
+    }
+
+}
